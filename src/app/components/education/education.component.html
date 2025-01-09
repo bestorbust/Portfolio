@@ -1,0 +1,37 @@
+<section class="education-section">
+    <h2 class="title">{{title}}</h2>
+    <div class="education-card">
+        <div class="image">
+            <img
+            [src]="education.logo"
+            class="logo"
+            >
+        </div>
+        <div class="card-content">
+            <h3 class="degree">{{education.degree}}</h3>
+            <p class="university">{{education.university}}</p>
+
+            <div class="details">
+                <div class="details-item">
+                    <span class="label">Duration:</span>
+                    <span class="value">{{education.duration}}</span>
+                </div>
+
+                <div class="details-item">
+                    <span class="label">Current CGPA:</span>
+                    <span class="value">{{education.gpa}}</span>
+                </div>
+
+                <div class="details-item">
+                    <span class="label">Coursework:</span>
+                    <span class="value">{{education.coursework.join(',')}}</span>
+                </div>
+
+                <div class="details-item">
+                    <span class="label">Minor:</span>
+                    <span class="value">{{education.minor}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

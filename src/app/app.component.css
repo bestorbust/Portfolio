@@ -1,0 +1,92 @@
+/* app.component.css */
+.center-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  background-color:rgb(244, 249, 249);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a.active {
+  background-color:rgb(157, 159, 159);
+  color: #333;
+}
+
+nav a:hover {
+  background-color: #e9ecef;
+}
+.homeicon{
+  margin-right: 30rem;
+  
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  padding: 4rem 2rem 2rem 2rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+}
+
+
+#home { background-color: #f8f9fa; }
+#about { background-color: #ffffff; }
+#projects { background-color: #f8f9fa; }
+#skills { background-color: #ffffff; }
+#experience { background-color: #f8f9fa; }
+#education { background-color: #ffffff; }
+#contact { background-color: #f8f9fa; }
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .homeicon{
+    margin-right: 10rem;
+  }
+}

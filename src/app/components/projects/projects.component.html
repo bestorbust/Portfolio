@@ -1,0 +1,62 @@
+
+<div class="project-container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <h2 class="title">{{title}}</h2>
+
+<div class="profile-section">
+  <div class="project-card"
+  *ngFor="let project of projects; let i=index">
+
+    <div class="project-content">
+
+      <div class="project-info">
+        <h2 class="project-title">{{project.title}}</h2>
+
+        <div class="tech-stack">
+          <h3 class="tech-header">Made with:</h3>
+          <div class="tech-icons">
+            <ng-container *ngFor="let tech of project.technologies">
+              <img class="tech-image"
+              [src]="technologyImages[tech]"
+              [alt]="tech"
+              (error)="handleImageError($event)">
+            </ng-container>
+
+          </div>
+        </div>
+
+        <p class="project-description">{{project.description}}</p>
+
+
+
+        <div class="action-buttons">
+          <a *ngIf="project.liveLink"
+          [href]="project.liveLink"
+          class="btn btn-primary"
+          target="_self"
+          >
+        <i class="fas fa-external-link-alt"></i>Live Demo</a>
+        <a *ngIf="project.githubLink"
+        [href]="project.githubLink"
+        class="btn btn-secondary"
+        target="_parent">
+      <i class="fab fa-github"></i>GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-image">
+      <a [href]="project.githubLink">
+      <img [src]="project.imageUrl"
+      [alt]="project.title"
+      (error)="handleImageError($event)"
+      class="preview-image"></a>
+      <!-- <p>Image</p> -->
+    </div>
+
+  </div>
+
+</div> 
+</div>

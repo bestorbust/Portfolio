@@ -1,0 +1,8 @@
+<h2 class="title"> {{title}}</h2>
+<div class="tech-grid">
+    <div class="tech-item" *ngFor="let tech of technologies">
+      <img [src]="tech.logo" [alt]="tech.name">
+      <span class="tech-name">{{tech.name}}</span>
+    </div>
+  </div>
+  

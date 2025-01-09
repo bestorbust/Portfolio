@@ -1,0 +1,143 @@
+.project-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
+  width: 100%;
+  min-width: 100%;
+}
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.project-card{
+  background-color: #e7eaef;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: all ease;
+  width:80%;
+  gap:20px;
+  min-width: 300px;
+  padding-top:10px ;
+  padding-left: 20px;
+  margin: 30px auto;
+  display: flex;
+  cursor: pointer;
+  /* height: 400px; */
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    width: 85%;
+  }
+  
+}
+
+.project-content{
+  /* background-color: aqua; */
+  max-width: 60%;
+  flex-wrap: wrap;
+  overflow-y: auto;
+
+}
+/* .project-info{
+  background-color: aquamarine; 
+  
+
+} */
+.project-title{
+  /* background-color: blue; */
+  font-style: italic;
+  font-weight: lighter;
+}
+.tech-stack{
+  display: flex;
+  /* background-color: blueviolet; */
+  align-content: center;
+
+}
+.tech-icons{
+  align-items: center;
+  
+
+}
+.tech-header{
+  font-size: 20px;
+  margin-top: 20px;
+  color: #9da0a2;
+  font-weight: normal;
+
+}
+.tech-image{
+height: 45px;
+margin: 5px;
+max-width: 35%;
+}
+.project-description{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.action-buttons{
+  margin-bottom: 18px;
+  /* background-color: antiquewhite; */
+  
+}
+.btn{
+  margin-right: 15px;
+  border-radius: 20px ;
+  border-color: rgb(163, 162, 162);
+  
+}
+
+.btn i {
+  font-size: 16px;
+  }
+  
+  .btn-primary {
+  background-color: #4285f4;
+  color: white;
+  
+  }
+  
+  .btn-primary:hover {
+  background-color: #f5f6f8;
+  color:#2d333b;
+  }
+  
+  .btn-secondary {
+    background-color: #f7f8fa;
+    color:#2d333b;
+
+  }
+  .btn-secondary:hover {
+    background-color: #2d333b;
+    color: white;
+  }
+.project-image{
+  /* background-color: beige; */
+  width:40%;
+  object-fit:cover;
+  margin-top: 2rem;
+
+}
+.preview-image{
+  width: 100%;
+  height: 100%; 
+  border-radius: 8px; /* Add rounded corners to preview image */
+  box-shadow: 0 2px 12px rgba(7, 6, 6, 0.795);
+
+}
+
+@media (max-width:968px) {
+  .project-image{
+    display: none;
+  }
+  .project-content{
+    
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  
+}
