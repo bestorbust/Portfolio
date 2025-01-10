@@ -18,6 +18,10 @@ export class SkillsComponent implements OnInit {
   title:string="SKILLS";
   technologies: Technology[] = [
     {
+      name: 'C',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
+    },
+    {
       name: 'JavaScript',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
     },

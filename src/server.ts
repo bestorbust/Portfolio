@@ -7,18 +7,19 @@ import {
 import express from 'express';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-let getContext: any;
+
+let netlifyContext: any;
 
 try {
-  getContext = require('@netlify/angular-runtime/context').getContext;
+  const { getContext } = require('@netlify/angular-runtime/context');
+  netlifyContext = getContext();
 } catch (error) {
   console.warn('Warning: Failed to load @netlify/angular-runtime/context.');
 }
 
-// Use getContext only if it exists
-if (getContext) {
-  const context = getContext();
-  console.log('Netlify context:', context);
+// Log the Netlify context if available
+if (netlifyContext) {
+  console.log('Netlify context:', netlifyContext);
 }
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
@@ -28,19 +29,19 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 /**
- * Example Express Rest API endpoints can be defined here.
+ * Example Express REST API endpoints can be defined here.
  * Uncomment and define endpoints as necessary.
  *
  * Example:
  * ```ts
  * app.get('/api/**', (req, res) => {
- *   // Handle API request
+ *   res.json({ message: 'Hello from API!' });
  * });
  * ```
  */
 
 /**
- * Serve static files from /browser
+ * Serve static files from the /browser directory.
  */
 app.use(
   express.static(browserDistFolder, {

@@ -49,7 +49,7 @@
 
     <div class="project-image">
       <a [href]="project.githubLink">
-      <img [src]="project.imageUrl"
+      <img  *ngIf="project.imageUrl" [src]="project.imageUrl"
       [alt]="project.title"
       (error)="handleImageError($event)"
       class="preview-image"></a>

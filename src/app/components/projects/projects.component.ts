@@ -6,9 +6,10 @@ interface Project{
   technologies:string[];
   description:string;
   githubLink:string;
-  imageUrl:string;
+  imageUrl?:string;
   demoLink?:string;
   liveLink?:string;
+  articleLink?:string;
 }
 
 @Component({
@@ -65,6 +66,15 @@ export class ProjectsComponent implements OnInit {
       imageUrl: "assets/images/resume.png",
     },
     {
+      title: " Unveiling Trends: The Evolution of Online Shopping in 2019",
+      technologies: ["Python"],
+      description: "This project explores the dynamic growth of online shopping in 2019 through in-depth data analysis. By leveraging Python libraries such as Pandas and Matplotlib, the analysis uncovers key insights into consumer behavior, sales trends, and the rapid evolution of e-commerce platforms.The project provides a comprehensive view of the digital marketplace, showcasing patterns that have shaped modern online retail experiences.",
+      githubLink: "https://github.com/bestorbust/https://github.com/bestorbust/online-shopping-trends-python/settings",
+      articleLink:"https://www.linkedin.com/pulse/evolution-online-shopping-2019-priyadarshini-p-zdhac/?trackingId=9wxpSGGLwTiYTHHeVxv7kg%3D%3D",
+      // liveLink:"https://bestorbust.github.io/Resume/",
+      // imageUrl: "assets/images/resume.png",
+    },
+    {
       title: "Car Accessory Management System",
       technologies: ["HTML & CSS","Flask","Sqlite3"],
       description: "The Car Accessory Management System is a Flask-based full-stack web application developed in my 2nd semester of B.Tech. The system allows users to register, browse car accessories, add items to the cart, place orders, and manage their profiles. It also includes an admin dashboard for managing customers, products, and orders with CRUD functionality. This project helped me gain hands-on experience in web development and backend programming.",
@@ -76,7 +86,7 @@ export class ProjectsComponent implements OnInit {
       technologies: ["Java","MySQL","jdbc","Netbeans"],
       description: "A system developed to manage library operations efficiently. It features user registration, book borrowing/returning, and an admin dashboard for managing books and user data. This project enhanced my skills in database integration and Java Swing for GUI development.",
       githubLink: "https://github.com/bestorbust/CarAccessoryManagementSystem-Flask",
-      imageUrl: "assets/images/resume.png",
+      // imageUrl: "assets/images/resume.png",
     },
    
     {
@@ -84,7 +94,7 @@ export class ProjectsComponent implements OnInit {
       technologies: ["C"],
       description: "A simulator developed in my 3rd semester of B.Tech to implement and visualize various CPU scheduling algorithms, including FCFS, SJF (Preemptive & Non-Preemptive), Priority (Preemptive & Non-Preemptive), and Round Robin. This project deepened my understanding of operating systems and scheduling concepts.",
       githubLink:"https://github.com/bestorbust/CPU-Scheduling",
-      imageUrl: "assets/images/rentrec.png",
+      // imageUrl: "assets/images/rentrec.png",
 
     },
     {
@@ -92,7 +102,7 @@ export class ProjectsComponent implements OnInit {
       technologies: ["Python","tKinter"],
       description: "A desktop application for tracking personal expenditures, allowing users to add, view, and analyze their daily spending habits. This project improved my knowledge of Python GUI development and database management.",
       githubLink:"https://github.com/bestorbust/tkinter-personal-expenditure",
-      imageUrl: "assets/images/rentrec.png",
+      // imageUrl: "assets/images/rentrec.png",
 
     },
     {
@@ -100,7 +110,7 @@ export class ProjectsComponent implements OnInit {
       technologies: ["HTML & CSS","Flask","Sqlite3"],
       description: "A web-based system for managing hospital operations, including patient registration, appointment scheduling, and billing. Admins can manage doctor schedules and patient records. This project provided hands-on experience in web development and Flask-based backend design.",
       githubLink:"https://github.com/bestorbust/hospital-management",
-      imageUrl: "assets/images/rentrec.png",
+      // imageUrl: "assets/images/rentrec.png",
 
     },
     
