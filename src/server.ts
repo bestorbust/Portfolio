@@ -5,10 +5,21 @@ import {
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
 import express from 'express';
-import { getContext } from '@netlify/angular-runtime/context';
-
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+let getContext: any;
+
+try {
+  getContext = require('@netlify/angular-runtime/context').getContext;
+} catch (error) {
+  console.warn('Warning: Failed to load @netlify/angular-runtime/context.');
+}
+
+// Use getContext only if it exists
+if (getContext) {
+  const context = getContext();
+  console.log('Netlify context:', context);
+}
 
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
