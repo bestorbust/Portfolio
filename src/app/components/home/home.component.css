@@ -71,7 +71,9 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     
-    
+    .image{
+      display: none;
+    }
   
     .buttons {
       flex-wrap: wrap;
