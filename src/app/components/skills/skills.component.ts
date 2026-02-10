@@ -34,7 +34,6 @@ export class SkillsComponent implements OnInit {
 
   // Backend
   { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-  { name: 'Express.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
   { name: 'REST APIs', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
   { name: 'JWT Authentication', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg' },
 
