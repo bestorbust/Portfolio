@@ -51,6 +51,14 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [
     {
+  title: "🚀 FixItHub: Community Issue Reporting Platform",
+  technologies: ["Angular", "Flask", "Python", "MongoDB"],
+  description: "A full-stack civic-tech platform enabling citizens to report and track real-world issues like potholes and water leaks. Built with Angular and Flask, the system includes JWT authentication, geolocation-based reporting, image uploads, and an admin dashboard. Integrated CI/CD pipelines with Docker and GitHub Actions for automated testing and deployment.",
+  githubLink: "https://github.com/bestorbust/fixithub-frontend",
+  liveLink: "https://fix-it-hub-rho.vercel.app/",
+  imageUrl: "assets/images/fixithub.png"
+},
+    {
       title: "🎯 DevFolio: Modern Angular Portfolio",
       technologies: ["Angular", "ts", "HTML", "CSS"],
       description: "Built a responsive personal portfolio using Angular 16 to showcase my projects and skills. Features include dynamic component loading, smooth animations, and interactive project cards. Implemented TypeScript for type-safe code and used Angular's built-in features for efficient state management.",
