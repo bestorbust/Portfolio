@@ -51,6 +51,14 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [
     {
+  title: "🚀 DreamNexx Group – Production Web Platform",
+  technologies: ["React", "Node.js", "MongoDB", "GCP"],
+  description: "Developed and deployed a production web platform for DreamNexx Group that supports real users and business operations. Built using React and Node.js with MongoDB Atlas for data storage. Implemented role-based access and REST APIs, and handled deployment using Vercel and Google Cloud Platform. Also responsible for maintaining and updating the system in production.",
+  githubLink: "Private Repository (Company Project)",  
+  liveLink: "https://www.dreamnexxgroup.in/",
+  imageUrl: "assets/images/dreamnexx.png"
+},
+    {
   title: "🚀 FixItHub: Community Issue Reporting Platform",
   technologies: ["Angular", "Flask", "Python", "MongoDB"],
   description: "A full-stack civic-tech platform enabling citizens to report and track real-world issues like potholes and water leaks. Built with Angular and Flask, the system includes JWT authentication, geolocation-based reporting, image uploads, and an admin dashboard. Integrated CI/CD pipelines with Docker and GitHub Actions for automated testing and deployment.",
@@ -67,14 +75,13 @@ export class ProjectsComponent implements OnInit {
       imageUrl: "assets/images/portfolio.png",
     },
     {
-      title: "🧾 Rent Receipt Generator",
-      technologies: ["React","JS","HTML","CSS","jspdf"],
-      description: "A React-based web application that generates professional rent receipts for PG/hostel management. Built with modern JavaScript libraries, it features a comprehensive form interface and generates branded PDF receipts with automated formatting and official stamps.",
-      githubLink:"https://github.com/bestorbust/pdf-generator",
-      liveLink:"https://genpdf.netlify.app/",
-      imageUrl: "assets/images/rentrec.png",
-
-    },
+  title: "🧾 PG Rent Management System",
+  technologies: ["React", "JavaScript", "jsPDF"],
+  description: "Developed a web-based system for a PG to automate generation of rent receipts, deposit receipts, rental agreements, and vacating forms. Built using React and jsPDF, the system dynamically generates multi-page PDFs with images and structured data, reducing manual paperwork.",
+  githubLink: "https://github.com/bestorbust/pg-rent-management-system",
+  liveLink: "https://genpdf.netlify.app/",
+  imageUrl: "assets/images/rentrec.png"
+}
     {
       title: "💼 Resume",
       technologies: ["HTML","CSS","JS"],
