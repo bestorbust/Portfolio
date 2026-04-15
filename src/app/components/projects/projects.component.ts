@@ -81,7 +81,14 @@ export class ProjectsComponent implements OnInit {
   githubLink: "https://github.com/bestorbust/pg-rent-management-system",
   liveLink: "https://genpdf.netlify.app/",
   imageUrl: "assets/images/rentrec.png"
-}
+},
+    {
+  title: "🔗 Decentralized File Sharing DApp",
+  technologies: ["React", "Solidity", "Ethers.js", "IPFS"],
+  description: "Built a decentralized file sharing application using blockchain and IPFS. Users can upload files to IPFS via Pinata and store file metadata on-chain using a smart contract. Integrated MetaMask for wallet-based authentication and transaction handling.",
+  githubLink: "https://github.com/bestorbust/decentralized-file-sharing",
+  imageUrl: "assets/images/dapp.png"
+},
     {
       title: "💼 Resume",
       technologies: ["HTML","CSS","JS"],
